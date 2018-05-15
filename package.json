@@ -1,0 +1,28 @@
+{
+  "name": "oltest-server",
+  "version": "1.0.0",
+  "description": "oltest server",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/main",
+    "nodemon": "nodemon -L -e ts,json --exec ts-node src/main.ts",
+    "prestart:prod": "tsc",
+    "start:prod": "node dist/main.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "^5.0.0",
+    "@nestjs/core": "^5.0.0",
+    "@nestjs/mongoose": "^4.0.0",
+    "mongoose": "^5.0.1",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^6.0.0",
+    "typescript": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^4.7.23",
+    "@types/node": "^7.0.41",
+    "ts-node": "^6.0.0",
+    "tslint": "^5.9.1",
+    "nodemon": "^1.17.4"
+  }
+}
